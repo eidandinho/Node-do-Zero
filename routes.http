@@ -1,0 +1,26 @@
+POST http://localhost:7272/videos
+Content-Type: application/json
+
+{
+    "title": "Video node",
+    "description": "Esse é o primeiro vídeo!",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:7272/videos?search
+
+###
+PUT http://localhost:7272/videos/8e94ce3f-28ee-4239-a743-e08368b50c34
+Content-Type: application/json
+
+{
+    "title": "Video Testando 123",
+    "description": "Esse é o primeiro vídeo!",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:7272/videos/223a9715-d2c5-4d9a-9683-174e441993d2
